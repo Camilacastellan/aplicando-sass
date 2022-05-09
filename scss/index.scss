@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,300&family=Roboto:ital,wght@0,100;1,300&display=swap');
+
+h1, h2, h3, p {
+    font-family:'Roboto', sans-serif;
+}
+
+.row{ 
+    padding-bottom: 20%;
+}
+body{
+    margin: 0%;
+    box-shadow: inset;
+}
+
+
+a { /*AGREGE TEXT DECORATION PARA SACAR SUBRAYADO A LOS LINK Y COLOR NEGRO*/
+    text-decoration:none;
+    color: $color-negro
+}
+
+
+/*logo header*/
+.logo-index{
+    display: flex;
+    justify-content: $centrado;
+
+    a{
+        margin: 0%;
+    }
+
+    img{
+        width: 5rem;
+    }
+}
+
+.titulo-principal h1, h2{
+    padding: 1%;
+    margin: 1%;
+    text-align: $centrado;
+    font-size: xx-large;
+}
+
+/*BANNER-INICIO*/
+
+.banner-inicio {
+    width: 100%;
+    display: flex;
+    justify-content: $centrado;
+    align-items: $centrado;
+
+    img{
+        width: 100%;
+        height: 10%;
+        display: block;
+    }
+}
+
+/*main index*/
+.grid-somos{
+    display: grid;
+    background-color: #fcfaf9;
+    grid-template-columns: auto auto;
+}
+
+.somos{
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(244, 237, 237);
+
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        width: 100%;
+        background-color: #dd8fc0;
+
+    }
+
+    .video-index{
+        text-align: $centrado;
+        width: 100%;
+        padding-bottom: 2rem;
+        margin: 70px;
+        
+    }
+}
+
+
+h1 {
+    color: rgb(13, 164, 113);
+    font-weight:lighter;
+    text-align: $centrado;
+    padding-top: 0.5rem;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    font-weight: bold;
+    padding-top: 40px;
+    /*SAQUE MARGIN Y AUTO*/
+    /*AGREGE PADDING-TOP PARA UN ESPACIO ENTRE EL BANNER Y TITULO*/
+    /*SAQUE BACKGROUND POSITION*/
+    /*AGREGUE FONT WEIGHT:BOLD*/
+
+}
+
+.etis-animacion{
+    animation-name: movimiento-uno;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+@keyframes movimiento-uno{
+    0%{
+        width: 600px;
+        color: greenyellow;
+    }
+
+    25%{
+        width: 450px;
+        color: rgb(39, 215, 15);
+    }
+
+    75%{
+        width: 300px;
+        color: rgb(16, 150, 16);
+    }
+
+    100%{
+        width: 600px;
+        color: rgb(44, 244, 9);
+    }
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: $centrado;
+    }
+
+    ul li{
+        display: inline-block;
+        justify-content: $centrado;
+        padding-top: 2rem;
+    }
+}
+
+/*Hace referencia a la class"redes-footer"*/
+.redes{
+    display: flex;
+    margin: 0%;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+
+    ul li{
+        display: inline-block;
+        align-items: $centrado;
+        justify-content: $centrado;
+        margin: 0%;
+    }
+
+    ul li img{
+        height: 30px;
+        width: 30px;
+        margin: 0%;
+    }
+}
